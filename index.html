@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>QR/Barcode Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="contenar">
       <p>Enter your URL</p>
-      <input type="text" placeholder="text or QR code " id="qrText" />
+      <input type="text" placeholder="text or QR code" id="qrText" />
       <div id="imgBox">
         <img src="" id="qrimg" />
       </div>
-      <button onclick="qrmake()">To make your QR code</button>
+      <button onclick="qrmake()">Generate Code</button>
+      <button onclick="toggleCodeType()">Switch to Barcode</button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
 
     <script src="script.js"></script>
   </body>
